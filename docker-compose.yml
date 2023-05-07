@@ -15,7 +15,7 @@ services:
       dockerfile: ${DOCKERFILE:-Dockerfile}
       args:
         TZ: ${TZ}
-        BUILD_ARGS: --medvram --allow-code --enable-insecure-extension-access --api --listen --port ${PORT} --xformers --exit
+        BUILD_ARGS: --medvram --allow-code --enable-insecure-extension-access --api --listen --port ${PORT} --xformers --exit --skip-torch-cuda-test
         RUN_ARGS: --medvram --allow-code --enable-insecure-extension-access --api --listen --port ${PORT} --xformers
         VOLUME: ${VOLUME:-data}
     deploy:

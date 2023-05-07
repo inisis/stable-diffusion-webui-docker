@@ -1,7 +1,5 @@
 FROM ubuntu:22.04
 
-MAINTAINER yftzeng "yftzeng@gmail.com"
-
 ENV TZ ${TZ}
 ENV TERM linux
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE DontWarn
